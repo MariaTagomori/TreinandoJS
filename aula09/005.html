@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: #bfe2e4;
+            color: black;
+            font: normal 16pt Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Primeiros passos com o DOM</h1>
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar <strong>DOM</strong></p>
+<div id="msg">Clique aqui</div>
+<script>
+    //DOM - Document Object Model
+    //Arvore DOM - window > location -> document -> history
+    //document -> html - head + body
+    // head -> title + style + meta
+    // body -> h1 + p + p + div
+    // p -> strong
+
+    //window.document.write("<p>Escrevendo com o DOM</p>");
+
+    //seleção
+    //marca, por ID, por nome, por classe e por seletor
+
+    //marca - getElementByTagName() - mais de um objeto
+    //var p1 = window.document.getElementsByTagName("p")[1];
+    window.document.write(p1.innerText);
+
+    //ID - getElementById() - um objeto
+
+    var d = window.document.getElementById("msg");
+    d.style.background = "green";
+    d.innerText = "Mensagem alterada com DOM";
+
+    //Name - getElementsByName() - mais de um objeto
+
+    var d = window.document.getElementsByName("msg")[0];
+    d.innerText = "Alterado por Name";
+
+    //Selector - querySelector() - um objeto
+
+    var d = window.document.querySelector("div#msg");
+    d.style.color = "white";
+
+
+</script>
+</body>
+</html>
