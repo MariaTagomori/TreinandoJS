@@ -3,4 +3,4 @@
 
 //guardando a resposta do usuário na variável nome
 var nome = window.prompt("Qual é o seu nome?");
-window.alert("Prazer, " + nome);
+window.alert("Prazer, " + nome); 
