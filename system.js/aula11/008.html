@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+<h1>Sistema de países</h1>
+Que país voce mora?: <input type="text" name="pais" id="pais">
+<Input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+</div>
+    <script>
+        function calcular() {
+        var txtv = window.document.getElementById('pais')
+        var res = window.document.getElementById('res')
+        var pais = txtv.value
+res.innerHTML = `<p>Seu país é ${pais}</p>`
+
+//condiçãodepaís
+if (pais == "Brasil") {
+    res.innerHTML += `<p>Você mora no Brasil!</p>` 
+    }   
+        else   {
+            res.innerHTML += `<p>Você é estrangeiro!</p>`
+        }
+        }
+    </script>
+</body>
+</html>
