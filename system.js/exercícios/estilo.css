@@ -18,3 +18,18 @@ footer {
     text-align: center;
     color: #666666;
 }
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+div#msg {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
